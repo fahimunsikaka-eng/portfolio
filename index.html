@@ -221,17 +221,19 @@
             position: relative;
         }
 
-        /* Futuristic Geometric Vector Graphic Box */
+       /* Futuristic Geometric Vector Graphic Box with Profile Picture */
         .graphic-shape {
             width: 350px;
             height: 350px;
-            background: url('https://ibb.co.com/3y7R7yN6') no-repeat center;
-            background-size: cover;
+            /* আপনার এডিট করা ছবিটির ডাইরেক্ট লিংক */
+            background: url('https://i.postimg.cc/85zK6H7F/fahim-hossain-portfolio-match.png') no-repeat center;
+            background-size: cover; /* ছবিটিকে শেপের সাথে নিখুঁতভাবে ফিট করবে */
             border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
             animation: morphing 10s infinite alternate ease-in-out;
             position: relative;
-            box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+            box-shadow: 0 0 30px rgba(0, 242, 254, 0.2);
             border: 2px solid var(--border-glass);
+            overflow: hidden; /* ছবি শেপের বাইরে যাবে না */
         }
 
         @keyframes morphing {
